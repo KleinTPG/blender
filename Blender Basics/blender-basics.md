@@ -121,3 +121,38 @@ For this, you have to tick "Keep Transform' in the adjust last operations panel 
 
 Or - move objects in the outliner into others, that will parent them.
 
+
+
+## 07 - Object Data and Edit Mode
+
+The object data can be found in the orange square, the object specific data can be found in the green icon below. In this case it is a mesh. You can make several objects share the same mesh for example.
+![Object Data vs. Object specific Data](object-data.png)
+
+
+
+## 08 - Mesh Components and Object Origins
+
+Move object origin by going to the move tool, then in the Options dropdown tick 'Affect Only Origins'.
+
+![Affect only origins option ticket](affect-origins.png)
+
+Better though: In edit mode, select where the new origin should be, e.g. a vertex. Hit [Shift] + [S] and choose 3D Cursor to selected. Go back to object mode and in (Object) -> (Set Origin) -> (Origin to 3D Cursor).
+
+You can select linked with [Ctrl] + [L]. The difference to just pressing [A] is, that when you have multiple meshes in one object, [A] would select all of them while select linked only selects what is linked to the current mesh.
+
+To join objects into the active object, press [Ctrl] + [J].
+
+You can separate meshes again by pressing [P] in edit mode. Careful about the resulting object origin!
+![Separating the highlighted mesh](separate-mesh.png)
+
+
+
+## 09 - Duplicating, Joining, and Instancing
+
+Duplicate an object with [Shift] + [D].
+
+Duplicate linked with [Alt] + [D]. This will create a new object using the same mesh data. This works with non-mesh data too, e.g. with cameras.
+
+Make the linked copy into an independant copy by clicking the number next to the mesh data slot.
+
+![Mesh data references](mesh-refs.png)
